@@ -7,7 +7,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1531346607,1843749440&fm=26&gp=0.jpg">
 <meta property="article:published_time" content="2021-03-10T07:07:15.000Z">
-<meta property="article:modified_time" content="2021-03-10T08:56:36.742Z">
+<meta property="article:modified_time" content="2021-03-10T13:46:47.587Z">
 <meta property="article:author" content="Steven林">
 <meta property="article:tag" content="MySQL">
 <meta name="twitter:card" content="summary">
@@ -80,7 +80,7 @@ var saveToLocal = {
   isHome: false,
   isHighlightShrink: false,
   isSidebar: true,
-  postUpdate: '2021-03-10 16:56:36'
+  postUpdate: '2021-03-10 21:46:47'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -142,7 +142,7 @@ var saveToLocal = {
     if (t === 'dark') activateDarkMode()
     else if (t === 'light') activateLightMode()
   }
-})()</script><meta name="generator" content="Hexo 5.2.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">15</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">7</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div id="body-wrap"><div id="web_bg"></div><div id="sidebar"><i class="fas fa-arrow-right on" id="toggle-sidebar"></i><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="toc-number">1.</span> <span class="toc-text">操作数据库</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%88%97%E7%B1%BB%E5%9E%8B"><span class="toc-number">2.</span> <span class="toc-text">数据库的列类型</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%AD%97%E6%AE%B5%E5%B1%9E%E6%80%A7%EF%BC%88%E9%87%8D%E7%82%B9%EF%BC%89"><span class="toc-number">3.</span> <span class="toc-text">数据库的字段属性（重点）</span></a></li></ol></div></div></div><header class="post-bg" id="page-header" style="background-image: url(https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1531346607,1843749440&amp;fm=26&amp;gp=0.jpg)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">萌新杀手的博客</a></span><span id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><span class="close" id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><div id="post-title"><div class="posttitle">MySQL基础</div></div><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-03-10T07:07:15.000Z" title="发表于 2021-03-10 15:07:15">2021-03-10</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-03-10T08:56:36.742Z" title="更新于 2021-03-10 16:56:36">2021-03-10</time></span></div><div class="meta-secondline"> <span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">553</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>1分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout_post" id="content-inner"><article id="post"><div class="post-content" id="article-container"><h1 id="操作数据库"><a href="#操作数据库" class="headerlink" title="操作数据库"></a>操作数据库</h1><p>操作数据库 &gt;  操作数据库中的表 &gt; 操作数据库中表的数据</p>
+})()</script><meta name="generator" content="Hexo 5.2.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">15</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">7</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div id="body-wrap"><div id="web_bg"></div><div id="sidebar"><i class="fas fa-arrow-right on" id="toggle-sidebar"></i><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="toc-number">1.</span> <span class="toc-text">操作数据库</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%88%97%E7%B1%BB%E5%9E%8B"><span class="toc-number">2.</span> <span class="toc-text">数据库的列类型</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%AD%97%E6%AE%B5%E5%B1%9E%E6%80%A7%EF%BC%88%E9%87%8D%E7%82%B9%EF%BC%89"><span class="toc-number">3.</span> <span class="toc-text">数据库的字段属性（重点）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="toc-number">4.</span> <span class="toc-text">创建数据库</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%BC%E5%BC%8F"><span class="toc-number">4.1.</span> <span class="toc-text">格式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="toc-number">4.2.</span> <span class="toc-text">常用命令</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E8%A1%A8%E7%9A%84%E7%B1%BB%E5%9E%8B"><span class="toc-number">5.</span> <span class="toc-text">数据表的类型</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E5%88%A0%E9%99%A4%E8%A1%A8"><span class="toc-number">6.</span> <span class="toc-text">修改删除表</span></a></li></ol></div></div></div><header class="post-bg" id="page-header" style="background-image: url(https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1531346607,1843749440&amp;fm=26&amp;gp=0.jpg)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">萌新杀手的博客</a></span><span id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><span class="close" id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><div id="post-title"><div class="posttitle">MySQL基础</div></div><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-03-10T07:07:15.000Z" title="发表于 2021-03-10 15:07:15">2021-03-10</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-03-10T13:46:47.587Z" title="更新于 2021-03-10 21:46:47">2021-03-10</time></span></div><div class="meta-secondline"> <span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.3k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>4分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout_post" id="content-inner"><article id="post"><div class="post-content" id="article-container"><h1 id="操作数据库"><a href="#操作数据库" class="headerlink" title="操作数据库"></a>操作数据库</h1><p>操作数据库 &gt;  操作数据库中的表 &gt; 操作数据库中表的数据</p>
 <p><strong>Mysql不区分大小写！！</strong></p>
 <ol>
 <li><p>创建数据库</p>
@@ -220,15 +220,134 @@ var saveToLocal = {
 <ol start="4">
 <li>非空 NULL not Null</li>
 </ol>
-<p>​        假设设置为 not null，如何不给他赋值，就会报错</p>
-<p>​       NULL 如果不填写，默认为NULL</p>
+<p>​         假设设置为 not null，如何不给他赋值，就会报错</p>
+<p>​         NULL 如果不填写，默认为NULL</p>
 <ol start="5">
 <li>默认：</li>
 </ol>
-<p>​       设置默认的值！</p>
+<p>​        设置默认的值！</p>
 <p> <strong><em>拓展：听听就好</em></strong></p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;*每一个表，都必须存在一下五个字段</span><br><span class="line">  未来做项目用的，表示一个记录的存在意义</span><br><span class="line">  </span><br><span class="line">  id  主键</span><br><span class="line">  &#96;version&#96;     乐观锁</span><br><span class="line">  is_delete     伪删除</span><br><span class="line">  gmt_create    创建时间</span><br><span class="line">  gmt_update    修改时间</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">阿里巴巴守则</span><br><span class="line">*&#x2F;</span><br></pre></td></tr></table></figure>
 
+
+
+
+
+<hr>
+<h1 id="创建数据库"><a href="#创建数据库" class="headerlink" title="创建数据库"></a>创建数据库</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">--目标:创建一个schoo1数据库</span><br><span class="line"></span><br><span class="line">--创建学生表(列,字段)使用SQL 创建</span><br><span class="line"></span><br><span class="line">--学号int 登录密码varchar(20)姓名,性别varchar(2),出生日期(datatime)，家庭住址，emai1--注意点，使用英文()，表的名称和字段尽量使用括起来</span><br><span class="line"></span><br><span class="line">-- AUTO_ INCREMENT 自增</span><br><span class="line"></span><br><span class="line">--字符串使用单引号括起来!</span><br><span class="line"></span><br><span class="line">--所有的语句后面加，(英文的)，最后一个不用加</span><br><span class="line"></span><br><span class="line">-- PRIMARY KEY 主键，一般- 一个表只有一个唯一的主键!</span><br><span class="line">CREATE DATABASE school</span><br><span class="line">CREATE TABLE IF NOT EXISTS &#96;student&#96; (</span><br><span class="line">&#96;id&#96; INT(4) NOT NULL AUTO_INCREMENT COMMENT &#39;学号&#39;,</span><br><span class="line">&#96;name&#96; VARCHAR(30) NOT NULL DEFAULT &#39;匿名&#39; COMMENT &#39;姓名&#39;,</span><br><span class="line">&#96;pwd&#96; VARCHAR(20) NOT NULL DEFAULT &#39;123456&#39; COMMENT &#39;密码&#39;,</span><br><span class="line">&#96;sex&#96; VARCHAR(2) NOT NULL DEFAULT &#39;男&#39; COMMENT &#39;性别&#39;,</span><br><span class="line">&#96;birthday&#96; DATETIME DEFAULT NULL COMMENT &#39;出生日期&#39;,</span><br><span class="line">&#96;address&#96; VARCHAR(100) DEFAULT NULL COMMENT &#39;家庭住址&#39;,</span><br><span class="line">&#96;email&#96; VARCHAR(50) DEFAULT NULL COMMENT &#39;邮箱&#39;,</span><br><span class="line">PRIMARY KEY (&#96;id&#96;)</span><br><span class="line">)ENGINE&#x3D;INNODB DEFAULT CHARSET&#x3D;utf8</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="格式"><a href="#格式" class="headerlink" title="格式"></a><strong>格式</strong></h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">CREATE TABLE [IF NOT EXISTS] &#96;表名&#96;（</span><br><span class="line">&#96;字段名&#96; 列类型[属性][索引][注释],</span><br><span class="line">&#96;字段名&#96; 列类型[属性][索引][注释],</span><br><span class="line">...</span><br><span class="line">&#96;字段名&#96; 列类型[属性][索引][注释]</span><br><span class="line">）[表类型][表的字符集设置][注释]</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">SHOW CREATE DATABASE school -- 查看创建数据库的语句</span><br><span class="line">SHOW CREATE TABLE student -- 查看student数据表的定义语句</span><br><span class="line">DESC student -- 显示表的结构</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<hr>
+<h1 id="数据表的类型"><a href="#数据表的类型" class="headerlink" title="数据表的类型"></a>数据表的类型</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;*</span><br><span class="line">-- 关于数据库引擎</span><br><span class="line">INNODB 默认使用</span><br><span class="line">MYISAM 早些年使用</span><br><span class="line"></span><br><span class="line">*&#x2F;</span><br></pre></td></tr></table></figure>
+
+
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th>MYISAM</th>
+<th>INNODB</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>事务支持</td>
+<td>不支持</td>
+<td>支持</td>
+</tr>
+<tr>
+<td>数据行锁定</td>
+<td>不支持</td>
+<td>支持</td>
+</tr>
+<tr>
+<td>外键约束</td>
+<td>不支持</td>
+<td>支持</td>
+</tr>
+<tr>
+<td>全文索引</td>
+<td>支持</td>
+<td>不支持</td>
+</tr>
+<tr>
+<td>表空间的大小</td>
+<td>较小</td>
+<td>较大，约为MYISAM的两倍</td>
+</tr>
+</tbody></table>
+<p>常规使用操作：</p>
+<ul>
+<li><p>MYISAM 节约空间，速度较快</p>
+</li>
+<li><p>INNODB 安全性高，事务处理，多表多用户操作</p>
+</li>
+</ul>
+<blockquote>
+<p>在物理空间存在的位置</p>
+</blockquote>
+<p>所有的数据库文件都存在data目录下，一个文件夹就对应一个数据库</p>
+<p>本质还是文件的存储</p>
+<p>MySQL 引擎在物理文件上的区别:</p>
+<ul>
+<li>innoDB 在数据库表中，只有一个*.frm文件，以及上级目录下的ibdata1文件</li>
+<li>MYISAM 对应的文件<ul>
+<li>*.frm - 表结构的定义文件</li>
+<li>*. MYD -数据文件</li>
+<li>*.MYI 索引文件</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p> 设置数据库字符集编码</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">CHARTSET&#x3D;UTF8</span><br></pre></td></tr></table></figure>
+
+
+
+<p><em>不设置的话，会是mysql默认的字符集编码-（不支持中文）</em></p>
+<p><em>可以在my.ini中配置默认的编码</em></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">character-set-server&#x3D;utf8</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<hr>
+<h1 id="修改删除表"><a href="#修改删除表" class="headerlink" title="修改删除表"></a>修改删除表</h1><blockquote>
+<p>修改</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">-- 修改表名 ALTER TABLE 旧表名 AS 新表名</span><br><span class="line">ALTER TABLE student RENAME  AS student1</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">-- 增加表的字段 ALTER TABLE 表名 ADD 字段名 列属性</span><br><span class="line">ALTER TABLE student1 ADD age INT(11)</span><br><span class="line"></span><br><span class="line">-- 修改表的字段（重命名，修改约束）</span><br><span class="line">ALTER TABLE student1 MODIFY age VARCHAR(11)  -- 修改约束</span><br><span class="line"></span><br><span class="line">ALTER TABLE student1 CHANGE age age1 INT(1)  -- 字段重命名</span><br><span class="line"></span><br><span class="line">-- 删除表的字段</span><br><span class="line">ALTER TABLE student1 DROP age1</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<blockquote>
+<p>删除</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">-- 删除表</span><br><span class="line">DROP TABLE IF EXISTS student1</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<p>注意点：</p>
+<ul>
+<li>`` 字段名，使用这个包裹</li>
+<li>注释 – /**/</li>
+<li><strong>sql 关键字大小写不敏感，建议写小写</strong></li>
+<li>所有的符号全部用英文</li>
+</ul>
 </div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">Steven林</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://steven900516.gitee.io/2021/03/10/MySQL%E4%B9%8B%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/">https://steven900516.gitee.io/2021/03/10/MySQL%E4%B9%8B%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://steven900516.gitee.io" target="_blank">萌新杀手的博客</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/MySQL/">MySQL</a></div><div class="post_share"><div class="social-share" data-image="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1531346607,1843749440&amp;fm=26&amp;gp=0.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2021/02/19/%E8%A1%8C%E5%86%85%E5%85%83%E7%B4%A0%E7%9A%84padding%E5%92%8Cmargin/"><img class="next-cover" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3309749606,2467569172&amp;fm=26&amp;gp=0.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">行内元素的padding和margin</div></div></a></div></nav></article></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By Steven林</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text"><script src="//lib.baomitu.com/jquery/3.3.1/jquery.min.js"></script><script src="https://myhkw.cn/player/js/player.js" id="myhk" key="160259594412" m="1"></script></div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script>var preloader = {
   endLoading: () => {
     document.body.style.overflow = 'auto';
